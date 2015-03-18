@@ -22,11 +22,25 @@ public class Main {
 
         Actor actor1 = new Actor("Robert Downey Jr.", true);
         Actor actor2 = new Actor("Scarlett Johansson", false);
+
+        //Test Cases:
+
         System.out.println("Films starring " + actor1.getName() + ": " + catalog.getFilmsByActor(actor1));
+        //Should output:    Films starring Robert Downey Jr.: [Marvel's The Avengers(2012) ***, Iron Man 3(2013) **]
+
         System.out.println("Films starring " + actor2.getName() + ": " + catalog.getFilmsByActor(actor2));
+        //Should output:    Films starring Scarlett Johansson: [Marvel's The Avengers(2012) ***, Don Jon(2013) *, Hitchcock(2012) *]
+
         System.out.println("Best Documentary of 2013: " + catalog.getBestFilm("Documentary", 2013));
+        //Should output:    Best Documentary of 2013: The Act of Killing(2013) ****
+
         System.out.println("Best Children's Film of 2013: " + catalog.getBestFilm("Childrens", 2013));
+        //Should output:    Best Children's Film of 2013: Frozen(2013) ****
+
         System.out.println("Best Drama Film of 2013: " + catalog.getBestFilm("Drama", 2013));
+        //Should output:    Best Drama Film of 2013: Dallas Buyers Club(2013) *****
+
         System.out.println("Best Action Film of 2013: " + catalog.getBestFilm("Action", 2013));
+        //Should output:    Best Action Film of 2013: Iron Man 3(2013) **
     }
 }
